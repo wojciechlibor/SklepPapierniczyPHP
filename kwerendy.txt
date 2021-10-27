@@ -1,0 +1,8 @@
+1.    SELECT `nazwa` FROM towary WHERE `promocja` = 1
+
+2.    SELECT `cena` FROM `towary` WHERE `id` = 8
+
+3. SELECT dostawcy.nazwa, count(idDostawcy) as ilosc FROM `dostawcy` JOIN towary ON dostawcy.id=towary.idDostawcy GROUP BY nazwa
+
+4. ALTER TABLE `dostawcy` ADD `e_mail` TEXT NOT NULL;
+
